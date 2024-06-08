@@ -1,10 +1,10 @@
 import { Navdata } from "../../data/navdata/Navdata"
 import navlinks from './Navlinks.module.css'
 
-const Navlinks = ({setOpen}) =>
+const Navlinks = ({setOpen, type}) =>
 {
     return(
-        <div className={navlinks.container}>
+        <div className={type === "sidebar" ? navlinks.sidebar : navlinks.container}>
             {Navdata.map((nav)=>
             (
                 <span key={nav.id}>{nav.data}</span>

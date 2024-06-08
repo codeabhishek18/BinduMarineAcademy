@@ -1,10 +1,16 @@
 import logo from './Logo.module.css'
+import  anchor from '../../assets/anchor.png'
 
 const Logo = () =>
 {
     return(
         <div className={logo.container}>
-            <h1 className={logo.heading}>BINDU MARINE ACADEMY</h1>
+            <div className={logo.header}>
+                <img src={anchor} alt="logo"/>
+                <span></span>
+                <p>BMA</p>
+            </div>
+            <p className={logo.name}>BINDU MARINE ACADEMY</p>
         </div>
     )
 }

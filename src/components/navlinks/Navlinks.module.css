@@ -1,4 +1,4 @@
-.container
+.container, .sidebar
 {
     font-size: 18px;
     font-weight: 500;
@@ -19,9 +19,14 @@ button
 }
 
 
-@media screen and (max-width:1080px) 
+@media screen and (max-width:840px) 
 {
     .container
+    {
+        display: none;
+    }
+
+    .sidebar
     {
         position: absolute;
         right: 0;
@@ -39,7 +44,7 @@ button
     button
     {
         display: block;
-        background-color: var(--primary-background);;
+        background-color: var(--primary-background);
         color: rgb(37, 94, 164);
         padding:5px;
         width: 60px;

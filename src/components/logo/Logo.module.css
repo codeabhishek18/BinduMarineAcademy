@@ -1,5 +1,37 @@
-.heading
+.header
 {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.header>img
+{
+    height: 80px;
+    width: 80px;
+}
+
+.header>span
+{
+    background-color: var(--primary-color);
+    height: 80px;
+    width: 3px;
+}
+
+
+.header>p
+{
+    font-size: 50px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.name
+{
+    margin-top: 8px;
+    font-size: 18px;
     color: var(--primary-color);
     font-family:Arial, Helvetica, sans-serif;
 }
+

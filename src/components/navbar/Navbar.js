@@ -12,8 +12,9 @@ const Navbar = () =>
     return(
         <div className={navbar.container}>
             <Logo/>
-            {open && <Navlinks setOpen={setOpen}/>}
+            <Navlinks/>
             <Hamburger setOpen={setOpen}/>
+            {open && <Sidebar setOpen={setOpen}/>}
         </div>
     )
 }
